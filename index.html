@@ -1,42 +1,130 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="author"content="Larry Rodriguez, InnovaTeam">
-    <title> Kathy Shop </title>
-  </head>
-  <body>
+<head>
+	<title>Kathy Shop</title>
+	<style type="text/css">
 
+		/* Menu perfil */
+		.left-side button{
+			position: relative;
+			background-color: unset;
+			border: 1px solid orange;
+			border-radius: 25px;
+			padding: 10px 20px;
+		}
 
-  
+		.left-side button:first-child{
+			padding-left: 50px;
+			padding-right: 35px;
+			margin-bottom: 25px;
+		}
 
-    <!-- Codigo chat facebook -->
+		.left-side button:first-child img{
+			bottom: 4px;
+			width: 45px;
+			position: absolute;
+			left: 3px;
+		}
+		
+		.left-side button:first-child i{
+			font-size: 43px;
+			position: absolute;
+			bottom: 12px;
+			right: 5px;
+		}
+
+		.left-side div {
+			display: grid;
+			justify-content: center;
+		}
+
+	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/manique.css">
+	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/normalizacion.css">
+	<link rel="stylesheet" href="./css/botones.css">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<h1>Kathy Shop</h1>
+		</div>
+		<div class="botones">
+			<button>Inicio</button>
+			<button>Nosotros</button>
+			<button>Contactarnos</button>
+			<button>Registrarse</button>
+		</div>
+	</header>
+
+	<div class="main-content">
+		<aside class="left-side">
+			<img class="logo-img" src="./img/logo.png" alt="Logotipo" width="300px">
+			
+
+			<div>
+				<button><img src="./img/perfil-icon.png" alt="perfil-logo" width="35px"/>Perfil <i class="fa fa-sort-desc" aria-hidden="true"></i></button>
+				<button>Registrarse</button>
+			</div>
+		</aside>
+
+		<main class="manique">
+			<div class="manique">
+				<div class="up">
+
+				</div>
+				<div class="down">
+					<button class="back" id="btn_back">
+						<img src="./img/btn_back.png" alt="atras." width="100px">
+					</button>
+					<button class="next" id="btn_next">
+						<img src="./img/btn_next.png" alt="siguiente." width="100px">
+					</button>
+					<span id="price">C$ 300</span>
+				</div>
+			</div>
+		</main>
+
+		<section class="clothes">
+			<div class="shirt" id="shirt"> 
+				<h1>Armario</h1>
+				<img src="./img/shirt1.png" alt="camisa">
+			</div>
+			<div class="short" id="short">
+				<img src="./img/short1.png" alt="">
+			</div>
+		</section>
+	</div>
+
+	<!-- Codigo chat facebook -->
     <!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v7.0'
-          });
-        };
+	<div id="fb-root"></div>
+	<script>
+	  window.fbAsyncInit = function() {
+		FB.init({
+		  xfbml            : true,
+		  version          : 'v7.0'
+		});
+	  };
 
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+	  (function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 
-      <!-- Your Chat Plugin code -->
-      <div class="fb-customerchat"
-        attribution=setup_tool
-        page_id="102270541531584"
-		  theme_color="#ffc300"
-		  logged_in_greeting="¡Hola! saludos de parte de nuestra tienda, ¿En que te podemos ayudar?"
-		  logged_out_greeting="¡Hola! saludos de parte de nuestra tienda, ¿En que te podemos ayudar?">
-      </div>
-  </body>
+	<!-- Your Chat Plugin code -->
+	<div class="fb-customerchat"
+	  attribution=setup_tool
+	  page_id="102270541531584"
+		theme_color="#ffc300"
+		logged_in_greeting="¡Hola! saludos de parte de nuestra tienda, ¿En que te podemos ayudar?"
+		logged_out_greeting="¡Hola! saludos de parte de nuestra tienda, ¿En que te podemos ayudar?">
+	</div>
+
+	<script src="./js/script.js"></script>
+</body>
 </html>
-

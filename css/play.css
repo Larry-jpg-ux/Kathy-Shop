@@ -1,0 +1,64 @@
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+p{
+    margin-left: 25px;
+    padding: 5px;
+    font-size: 25px;
+    font-family: cursive;
+    color: white;
+    background-color: #1e2496;
+    text-align: center;
+}
+
+.principal{
+    display: grid;
+    grid-template-columns: 25% auto;
+}
+
+.principal main{
+    margin: 15px;
+}
+
+.windows ul {
+    display: flex;
+    list-style: none;
+}
+
+.windows ul li:nth-child(n+2):before {
+    margin: 10px;
+    content: "/";
+    color: white;
+}
+
+.windows{
+    margin-top: 5px;
+    font-size: 25px;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 17px;
+    border: 3px solid white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+main > img{
+    align-self: center;
+    width: 70%;
+}
+
+main a{
+    align-self: center;
+}
+
+main a img {
+    width: 200px;
+}

@@ -1,0 +1,74 @@
+
+.clothes{
+    display: flex;
+    flex-direction: column;
+}
+
+.clothes div{
+    height: 50%;
+    position: relative;
+    background-color: #ababab;
+}
+
+.clothes div img{
+    background-color: #8c898985;
+    position: absolute;
+    box-shadow: 0px 0px 10px #8c898985;
+}
+
+.clothes div:first-child img{
+    height: 260px;
+}
+
+.clothes div:last-child img{
+    top: -40px;
+    right: 0;
+    height: 295px;  
+}
+
+/* armario */
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/* Codigo para los botones de colocar y volver en posicion los elementos. */
+.down{
+    position: relative;
+}
+
+/* precio */
+span{
+    display: none;
+    position: absolute;
+    right: 45px;
+    bottom: 90px;
+
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #ababab;
+}
+
+/* /botones izq y der */
+.back, .next{
+    position: absolute;
+    background-color: unset;
+    border-radius: unset !important;
+    padding: unset;
+    border: none;
+}
+
+.back{
+    top: 0;
+    left: 65px;
+}
+
+.next{
+    right: 75px;
+}
