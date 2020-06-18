@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kathy Shop</title>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/normalizacion.css">
@@ -17,7 +17,7 @@
                 <h1>Kathy Shop</h1>
             </div>
             <div class="botones">
-                <button>Inicio</button>
+                <button onclick="window.location.href='/'">Inicio</button>
                 <button>Nosotros</button>
                 <button>Contactarnos</button>
                 <button>Registrarse</button>
@@ -42,10 +42,38 @@
                     </ul>
                 </div>
                 <img src="../img/logo juego_logo juego.png" alt="logo">
-                <a href="../botones.html" rel=""><img src="../img/bot jugar_botones.png" alt="boton_jugar"></a>
+                <a href="botones.html" rel=""><img src="../img/bot jugar_botones.png" alt="boton_jugar"></a>
             </main>
         </div>
+    </div>
 
+	<!-- Codigo chat facebook -->
+    <!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<script>
+	  window.fbAsyncInit = function() {
+		FB.init({
+		  xfbml            : true,
+		  version          : 'v7.0'
+		});
+	  };
+
+	  (function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<!-- Your Chat Plugin code -->
+	<div class="fb-customerchat"
+	  attribution=setup_tool
+	  page_id="102270541531584"
+		theme_color="#ffc300"
+		logged_in_greeting="¡Hola! saludos de parte de nuestra tienda, ¿En que te podemos ayudar?"
+		logged_out_greeting="¡Hola! saludos de parte de nuestra tienda, ¿En que te podemos ayudar?">
+	</div>
     </div>
 </body>
 </html>

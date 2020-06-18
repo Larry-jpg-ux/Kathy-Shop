@@ -1,101 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<title>Kathy Shop</title>
-	<style type="text/css">
-
-		/* Menu perfil */
-		.left-side button{
-			position: relative;
-			background-color: unset;
-			border: 1px solid orange;
-			border-radius: 25px;
-			padding: 10px 20px;
-		}
-
-		.left-side button:first-child{
-			padding-left: 50px;
-			padding-right: 35px;
-			margin-bottom: 25px;
-		}
-
-		.left-side button:first-child img{
-			bottom: 4px;
-			width: 45px;
-			position: absolute;
-			left: 3px;
-		}
-		
-		.left-side button:first-child i{
-			font-size: 43px;
-			position: absolute;
-			bottom: 12px;
-			right: 5px;
-		}
-
-		.left-side div {
-			display: grid;
-			justify-content: center;
-		}
-
-	</style>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="./css/manique.css">
-	<link rel="stylesheet" href="./css/header.css">
-	<link rel="stylesheet" href="./css/normalizacion.css">
-	<link rel="stylesheet" href="./css/botones.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kathy Shop</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/normalizacion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/catalogo.css">
 </head>
 <body>
-	<header>
-		<div class="logo">
-			<h1>Kathy Shop</h1>
-		</div>
-		<div class="botones">
-			<button>Inicio</button>
-			<button>Nosotros</button>
-			<button>Contactarnos</button>
-			<button>Registrarse</button>
-		</div>
-	</header>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>Kathy Shop</h1>
+            </div>
+            <div class="botones">
+                <button onclick="window.location.href='/'">Inicio</button>
+                <button>Nosotros</button>
+                <button>Contactarnos</button>
+                <button>Registrarse</button>
+            </div>
+        </header>
 
-	<div class="main-content">
-		<aside class="left-side">
-			<img class="logo-img" src="./img/logo.png" alt="Logotipo" width="300px">
-			
+        <div class="principal">
+            <aside class="left-side">
+                <img class="logo-img" src="../img/logo.png" alt="Logotipo" width="300px">
+                
+                <div>
+                    <a href="./pages/Catalogo.html">Catalogo <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                </div>
+            </aside>
 
-			<div>
-				<button><img src="./img/perfil-icon.png" alt="perfil-logo" width="35px"/>Perfil <i class="fa fa-sort-desc" aria-hidden="true"></i></button>
-				<button>Registrarse</button>
-			</div>
-		</aside>
+            <div class="fondos">
+                <!-- <img src="../img/17.jpg" alt=""> -->
+                <div class="image1"></div>
+                <div class="image2"></div>
+                <!-- <img src="../img/admin.png" alt=""> -->
+            </div>
 
-		<main class="manique">
-			<div class="manique">
-				<div class="up">
-
-				</div>
-				<div class="down">
-					<button class="back" id="btn_back">
-						<img src="./img/btn_back.png" alt="atras." width="100px">
-					</button>
-					<button class="next" id="btn_next">
-						<img src="./img/btn_next.png" alt="siguiente." width="100px">
-					</button>
-					<span id="price">C$ 300</span>
-				</div>
-			</div>
-		</main>
-
-		<section class="clothes">
-			<div class="shirt" id="shirt"> 
-				<h1>Armario</h1>
-				<img src="./img/shirt1.png" alt="camisa">
-			</div>
-			<div class="short" id="short">
-				<img src="./img/short1.png" alt="">
-			</div>
-		</section>
-	</div>
+            <p>Buena Calidad,<br>!Lo que buscas,<span style="color: white;"> lo encuentras aqui!</span></p>
+        </div>
+    </div>
 
 	<!-- Codigo chat facebook -->
     <!-- Load Facebook SDK for JavaScript -->
@@ -124,7 +71,6 @@
 		logged_in_greeting="¡Hola! saludos de parte de nuestra tienda, ¿En que te podemos ayudar?"
 		logged_out_greeting="¡Hola! saludos de parte de nuestra tienda, ¿En que te podemos ayudar?">
 	</div>
-
-	<script src="./js/script.js"></script>
+    </div>
 </body>
 </html>

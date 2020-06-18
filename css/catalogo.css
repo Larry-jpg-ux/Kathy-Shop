@@ -29,6 +29,11 @@ a{
     height: 100%;
     z-index: -1;
 }
+
+.left-side div{
+    margin-top: 30px;
+    margin-left: 50px;
+}
 /* 
 .fondos img:first-child{
 } */
@@ -46,7 +51,20 @@ a{
     background-image: url("../img/admin.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: blue;
     height: 100%;
     width: 40%;
+}
+
+p{
+    margin-left: 35%;
+    text-align: start;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    color: white;
+    font-weight: bold;
+}
+
+p span{
+    color: #d1aaaa;
 }
